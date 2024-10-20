@@ -174,12 +174,33 @@ section {
   height: 80vh;
 }
 
+/* Add bounce effect to the picture container */
 .section__pic-container {
   display: flex;
   height: 400px;
   width: 400px;
   margin: auto 0;
+  animation: bounceIn 1.5s ease-in-out;
 }
+
+/* Keyframes for the bounce animation */
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  80% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 
 .profile-pic {
   border-radius: 50%;
@@ -359,12 +380,6 @@ section {
 .section-container {
   gap: 4rem;
   height: 80%;
-}
-
-.section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
 }
 
 /* EXPERIENCE SECTION */
