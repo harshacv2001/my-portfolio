@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script
+      src="https://kit.fontawesome.com/44c6c862a1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">
+        <a href="index.html" class="nav-logo">Harsha V</a>
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="blogs.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">
+        <a href="index.html" class="nav-logo">Harsha V</a>
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+          <li>
+            <a href="experience.html" onclick="toggleMenu()">Experience</a>
+          </li>
+          <li><a href="blogs.html" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/dashboard.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Next.js Dashboard
+            </h2>
+            <div class="text-container">
+              <p>
+                A simplified financial dashboard with the following features: A
+                public home page. A login page with protected dashboard access.
+                User functionality to add, edit, and delete invoices. A
+                connected database to manage data. This project also contained
+                key concepts like authentication and database
+                integration.
+              </p>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/harshacv2001/dashboard.git'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://dashboard-sandy-ten.vercel.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/portfolio.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Developer Portfolio
+            </h2>
+            <div class="text-container">
+              <p>
+                A personal developer portfolio with the following features: A
+                public landing page showcasing projects and skills. A contact
+                form for inquiries. Detailed sections for each project,
+                including descriptions, technologies used, and links to GitHub
+                repositories or live demos. This project also highlighted key
+                concepts like responsive design.
+              </p>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!-- <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Chat Application</h2>
+            <div class="text-container">
+              <p>
+                A personal developer portfolio with the following features: A
+                public landing page showcasing projects and skills. A contact
+                form for inquiries. Detailed sections for each project,
+                including descriptions, technologies used, and links to GitHub
+                repositories or live demos. This project also highlighted key
+                concepts like responsive design.
+              </p>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      /> -->
+    </section>
+
+    <footer>
+      <p>Copyright &#169; 2024 Harsha Vidanagamage. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
